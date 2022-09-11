@@ -22,10 +22,8 @@ password : admin
 3. import file this file ['db_project_aries.sql'](https://drive.google.com/file/d/11ja3mpUJrY5JAJSf-ka0HjDqtkK9t7q9/view?usp=sharing).
 4. Download Zip file and Extract
 5. open project in text editor (Visual Studio) 
-6. change .env.example to .env 
-7. open .env and replace DB_DATABASE=laravel with DB_DATABASE=db_project_aries
 8. in terminal do some scripts
-9. 'composer install' and 'php artisan key:generate'
+9. 'composer install' and 'php artisan key:generate' 'php artisan jwt:secret'
 10. for running project server typing 'php artisan serve'
 11. project successfully running
 
