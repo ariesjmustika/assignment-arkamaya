@@ -1,3 +1,4 @@
+// ARIES
 $(document).ready(function () {
     var token = localStorage.getItem('token');
     var email = localStorage.getItem('email');
