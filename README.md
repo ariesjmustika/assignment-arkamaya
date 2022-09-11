@@ -11,56 +11,51 @@
 
 This is Mini Project Assestment with PT. Arkamaya:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Account
+email    : admin@gmail.com
+password : admin
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Setting Configuration
 1. running apache, mysql in Xampp/Mamp for starting activate local server
 2. create new database 'db_project_aries' in http://localhost/phpmyadmin/
-3. import file this file ['db_project_aries.sql'](https://patreon.com/taylorotwell).
-4. running project using 'php artisan serve'
+3. import file this file ['db_project_aries.sql'](https://drive.google.com/file/d/11ja3mpUJrY5JAJSf-ka0HjDqtkK9t7q9/view?usp=sharing).
+4. Download Zip file and Extract
+5. open project in text editor (Visual Studio) running project using 'php artisan serve' in terminal
 6. project successfully running
 
 
-## Laravel Sponsors
+## Route List
+1. http://127.0.0.1:8000/login                -> login page
+2. http://127.0.0.1:8000/register             -> register page
+3. http://127.0.0.1:8000/api/project/project  -> dashboard page
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel
 
-### Premium Partners
+# Notes 
+> Create Account
+  - name -> required
+  - email -> required|email
+  - password -> required 
+  - password2 -> required|equalto:password
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+> JWT Auth
+ - Every post request need tocken to access
+ - token expired 15 meanutes in backend, and would refresh token every 15 meanutes in frontend tho
 
-## Contributing
+> Main Jquery/javascript located in public/assets/js/custom.js
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+> Technology 
+- Backend : Laravel (PHP)
+- Frontend : Jquery, Ajax, Datatable, Bootstrap
+- CRUD Form : Pop up modal
+- Validation Form : Jquery validation
+- Alert : basic alert, sweetalert2
+- Icon : Font-awesome
+- Template Admin : AdminLte 3.20
+- Store loggin user : Localstorage
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+> Database Migrations
+Actually you can create database in project directly by typing 'php artisan migrate' in cmd/terminal on root project
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
