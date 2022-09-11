@@ -46,6 +46,7 @@ password : admin
 
 
 > Technology 
+- Token : [JWT Auth Tymon Design](https://github.com/tymondesigns/jwt-auth)
 - Backend : [Laravel PHP](https://laravel.com/docs/9.x/installation)
 - Frontend : [Jquery](https://jquery.com/), Ajax, [Datatable](https://datatables.net/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - CRUD Form :[Pop up modal](https://getbootstrap.com/docs/4.0/components/modal/)
