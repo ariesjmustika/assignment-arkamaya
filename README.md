@@ -46,14 +46,14 @@ password : admin
 
 
 > Technology 
-- Backend : Laravel (PHP)
-- Frontend : Jquery, Ajax, Datatable, Bootstrap
-- CRUD Form : Pop up modal
-- Validation Form : Jquery validation
-- Alert : basic alert, sweetalert2
-- Icon : Font-awesome
-- Template Admin : AdminLte 3.20
-- Store loggin user : Localstorage
+- Backend : [Laravel PHP](https://laravel.com/docs/9.x/installation)
+- Frontend : [Jquery](https://jquery.com/), Ajax, [Datatable](https://datatables.net/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- CRUD Form :[Pop up modal](https://getbootstrap.com/docs/4.0/components/modal/)
+- Validation Form : [Jquery validation](https://jqueryvalidation.org/)
+- Alert : [basic alert](https://www.w3schools.com/jsref/met_win_alert.asp), [sweetalert2](https://sweetalert2.github.io/)
+- Icon : [Font-awesome](https://fontawesome.com/)
+- Template Admin : [AdminLte 3.20](https://codeload.github.com/ColorlibHQ/AdminLTE/zip/refs/tags/v3.2.0)
+- Store loggin user : [Localstorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
 
 > Database Migrations
 Actually you can create database in project directly by typing 'php artisan migrate' in cmd/terminal on root project
