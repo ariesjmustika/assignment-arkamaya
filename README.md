@@ -61,8 +61,8 @@ Actually you can create database in project directly by typing 'php artisan migr
 
 
 ### Layout
-<img src="public/assets/screenshoot/login.jpg" alt="Girl in a jacket" width="500" height="600">
-<img src="public/assets/screenshoot/register.jpg" alt="Girl in a jacket" width="500" height="600">
-<img src="public/assets/screenshoot/admin.jpg" alt="Girl in a jacket" width="500" height="600">
+<img src="public/assets/screenshoot/login.jpg" alt="Girl in a jacket" >
+<img src="public/assets/screenshoot/register.jpg" alt="Girl in a jacket" >
+<img src="public/assets/screenshoot/admin.jpg" alt="Girl in a jacket" >
 
 
