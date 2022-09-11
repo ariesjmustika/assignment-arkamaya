@@ -67,7 +67,19 @@ $(document).ready(function () {
                     localStorage.setItem('token', res.access_token);
                     localStorage.setItem('email', res.email);
                     window.location.href = window.location.origin + '/api/project/project';
-                }
+                },
+                statusCode: {
+                    401: function () {
+                        Swal.fire({
+                            title: 'ERROR',
+                            text: "Email or password incorrect!",
+                            icon: 'error',
+                            showCancelButton: false,
+                            showConfirmButton: false
+                        })
+                        // alert('email or password incorrect!');
+                    }
+                },
 
             });
         }
@@ -318,6 +330,7 @@ $(document).ready(function () {
 
 
     });
+
     $('#refresh-btn').click(function () {
         token = localStorage.getItem('token');
         $.ajax({
@@ -449,13 +462,10 @@ $(document).ready(function () {
             success: function (res) {
                 var html = '';
                 var i;
-                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
                 for (i = 0; i < res.data.length; i++) {
                     debugger
                     var project_start = changeDateFormat(res.data[i].project_start),
                         project_end = changeDateFormat(res.data[i].project_end);
-
                     html += '<tr>' +
                         '<td><input type="checkbox" value="' + res.data[i].project_id + " " + res.data[i].project_name +
                         '" class="check-class selected-' + i + '">' +
@@ -499,15 +509,8 @@ $(document).ready(function () {
             },
             statusCode: {
                 401: function () {
-                    if (token == '') {
-                        // refreshToken();
-                        return 0;
-                    }
-                    window.location.href = window.location.origin + '/login';
+                    refreshToken();
                 },
-                // 500: function() {
-                //   window.location.href = window.location.origin + '/login';
-                // }
             },
         });
         // get client list
@@ -527,7 +530,12 @@ $(document).ready(function () {
                     debugger
                 }
                 $('.client_id').append(html);
-            }
+            },
+            statusCode: {
+                401: function () {
+                    refreshToken();
+                },
+            },
 
         });
 
@@ -588,24 +596,16 @@ $(document).ready(function () {
     function locationUrlChecking() {
         var location = window.location.href;
         if (location.indexOf('login') != -1) {
-            // isNotLogin();
             var email = localStorage.getItem('email');
             var password = localStorage.getItem('password');
-
-            // alert(email);
-            // alert(password);
             $('#email').val(email);
             $('#password').val(password);
             isLogin();
-
-
         } else if (location.indexOf('register') != -1) {
 
         } else {
             isNotLogin();
             init();
-            // alert(token);
-            // alert(email);
             setInterval(() => {
                 if (token != '' || token != null) {
                     refreshToken();
