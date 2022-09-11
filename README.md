@@ -17,11 +17,11 @@ password : admin
 
 
 ## Setting Configuration
-1. running apache, mysql in Xampp/Mamp for starting activate local server
+1. running apache, mysql in Xampp/Mamp for run local server
 2. create new database 'db_project_aries' in http://localhost/phpmyadmin/
 3. import file this file ['db_project_aries.sql'](https://drive.google.com/file/d/11ja3mpUJrY5JAJSf-ka0HjDqtkK9t7q9/view?usp=sharing).
 4. Download Zip file and Extract
-5. open project in text editor (Visual Studio) running project using 'php artisan serve' in terminal
+5. open project in text editor (Visual Studio) running project by tying 'php artisan serve' in terminal
 6. project successfully running
 
 
@@ -37,6 +37,22 @@ password : admin
   - email -> required|email
   - password -> required 
   - password2 -> required|equalto:password
+
+> Create/Update Project
+  - project_name -> required
+  - client_name -> required
+  - project_start -> required 
+  - project_end -> required
+  - project_status -> required
+
+> Delete Project
+  - selected item by checked the checkbox
+
+> Filter Project
+  - entry project name, client name and project status
+
+> Clear Project
+  - clear the filter search project and refresh data
 
 > JWT Auth
  - Every post request need tocken to access
