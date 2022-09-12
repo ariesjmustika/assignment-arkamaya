@@ -19,7 +19,7 @@ password : admin
 ## Setting Configuration
 1. running apache, mysql in Xampp/Mamp for run local server
 2. create new database 'db_project_aries' in http://localhost/phpmyadmin/
-3. import file this file ['db_project_aries.sql'](https://drive.google.com/file/d/11ja3mpUJrY5JAJSf-ka0HjDqtkK9t7q9/view?usp=sharing).
+3. import file this file ['db_project_aries.sql'](https://drive.google.com/file/d/1-RujZFYQ4BlbqElim7Paans6EcM6t7Hg/view?usp=sharing).
 4. Download Zip file and Extract
 5. open project in text editor (Visual Studio) 
 8. in terminal do some scripts
